@@ -1,48 +1,11 @@
-apiVersion: v1
-items:
 - apiVersion: route.openshift.io/v1
   kind: Route
   metadata:
     annotations:
-      openshift.io/host.generated: "true"
-    creationTimestamp: "2020-09-11T15:34:15Z"
     labels:
       app: quotesapi
-    managedFields:
-    - apiVersion: route.openshift.io/v1
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:metadata:
-          f:labels:
-            .: {}
-            f:app: {}
-        f:spec:
-          f:port:
-            .: {}
-            f:targetPort: {}
-          f:to:
-            f:kind: {}
-            f:name: {}
-            f:weight: {}
-          f:wildcardPolicy: {}
-      manager: oc
-      operation: Update
-      time: "2020-09-11T15:34:15Z"
-    - apiVersion: route.openshift.io/v1
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:status:
-          f:ingress: {}
-      manager: openshift-router
-      operation: Update
-      time: "2020-09-11T15:34:15Z"
     name: quotesapi
-    namespace: spokhyan-ibm-quotes-dev
-    resourceVersion: "4470808"
-    selfLink: /apis/route.openshift.io/v1/namespaces/spokhyan-ibm-quotes-dev/routes/quotesapi
-    uid: b5d6c432-4308-423e-ae41-c3ea22086dd0
   spec:
-    host: quotesapi-spokhyan-ibm-quotes-dev.apps.ap45.prod.nextcle.com
     port:
       targetPort: 8080-tcp
     to:
@@ -50,17 +13,3 @@ items:
       name: quotesapi
       weight: 100
     wildcardPolicy: None
-  status:
-    ingress:
-    - conditions:
-      - lastTransitionTime: "2020-09-11T15:34:15Z"
-        status: "True"
-        type: Admitted
-      host: quotesapi-spokhyan-ibm-quotes-dev.apps.ap45.prod.nextcle.com
-      routerCanonicalHostname: apps.ap45.prod.nextcle.com
-      routerName: default
-      wildcardPolicy: None
-kind: List
-metadata:
-  resourceVersion: ""
-  selfLink: ""
