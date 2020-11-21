@@ -8,8 +8,8 @@
         "source": {
             "type": "Git",
             "git": {
-                "uri": "https://github.com/spokhyan/DO288-apps",
-                "ref": "master"
+                "uri": "https://github.com/spokhyan/DO288-apps"
+               
             },
             "contextDir": "movies"
         },
