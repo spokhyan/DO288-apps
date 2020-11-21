@@ -9,7 +9,7 @@
             "type": "Git",
             "git": {
                 "uri": "https://github.com/spokhyan/DO288-apps",
-                "ref": "review-cicd"
+                "ref": "master"
             },
             "contextDir": "movies"
         },
