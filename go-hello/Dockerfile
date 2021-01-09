@@ -26,7 +26,8 @@ ENV APP_ROOT=/opt/app-root \
 RUN   yum install -y --nodocs --disableplugin=subscription-manager golang && \
       yum clean all --disableplugin=subscription-manager -y 
 
-# TODO: Place the S2I scripts in the correct location
+# TODO: Place the S2I scripts in the correct 
+COPY ./s2i/bin/ /usr/libexec/s2i
 
 # Permissions to run on OpenShift
 RUN mkdir -p ${APP_ROOT} && \
